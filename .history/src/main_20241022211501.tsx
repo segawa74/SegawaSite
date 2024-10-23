@@ -5,14 +5,8 @@ import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const rootElement = document.getElementById("root");
-
-if (rootElement) {
-  createRoot(rootElement).render(
-    <StrictMode>
-      <App />
-    </StrictMode>
-  );
-} else {
-  console.error("Root element not found");
-}
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
