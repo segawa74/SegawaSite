@@ -47,5 +47,3 @@ function ContactInfoCard({ icon, text, href }: ContactInfoCardProps) {
     </Card>
   );
 }
-
-export default ContactMe;

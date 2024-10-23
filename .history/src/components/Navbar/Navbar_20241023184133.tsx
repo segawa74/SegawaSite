@@ -80,5 +80,3 @@ function MobileNav() {
     </div>
   );
 }
-
-export default NavBar;

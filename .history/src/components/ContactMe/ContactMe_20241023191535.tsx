@@ -35,14 +35,14 @@ function ContactInfoCard({ icon, text, href }: ContactInfoCardProps) {
     <Card>
       <CardContent className="flex items-center p-6">
         <div className="mr-4 text-primary">{icon}</div>
-        <a
+        <Link
           href={href}
           target="_blank"
           rel="noopener noreferrer"
           className="text-sm hover:underline"
         >
           {text}
-        </a>
+        </Link>
       </CardContent>
     </Card>
   );

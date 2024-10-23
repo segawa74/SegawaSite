@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import useEmblaCarousel from "embla-carousel-react";
+import { useEmblaCarouselType } from "embla-carousel-react";
 import { PORTFOLIO } from "../../utils/data";
 
 interface PortfolioItem {
@@ -19,7 +19,7 @@ interface PortfolioItem {
 }
 
 const Portfolio = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+  const [emblaRef, emblaApi] = useEmblaCarouselType({ loop: false });
 
   const scrollPrev = React.useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();

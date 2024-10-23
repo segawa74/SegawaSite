@@ -18,6 +18,10 @@ interface Skill {
 const Skills: React.FC = () => {
   const [selectedSkill, setSelectedSkill] = useState<Skill>(SKILLS[0]);
 
+  const handleSelectSkill = (data: Skill) => {
+    setSelectedSkill(data);
+  };
+
   return (
     <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-4">

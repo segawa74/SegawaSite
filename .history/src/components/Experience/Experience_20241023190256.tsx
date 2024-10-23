@@ -23,25 +23,4 @@ const Experience: React.FC = () => {
   );
 };
 
-function ExperienceCard({ details }: { details: ExperienceDetails }) {
-  return (
-    <Card className="h-full">
-      <CardHeader>
-        <CardTitle>{details.title}</CardTitle>
-        <Badge variant="secondary" className="w-fit">
-          {details.date}
-        </Badge>
-      </CardHeader>
-      <CardContent>
-        <ul className="list-disc list-inside space-y-2">
-          {details.responsibilities.map((item, index) => (
-            <li key={index} className="text-sm text-muted-foreground">
-              {item}
-            </li>
-          ))}
-        </ul>
-      </CardContent>
-    </Card>
-  );
-}
 export default Experience;

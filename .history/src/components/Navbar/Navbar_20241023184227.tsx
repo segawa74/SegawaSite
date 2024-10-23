@@ -62,23 +62,4 @@ export function NavBar() {
   );
 }
 
-function MobileNav() {
-  return (
-    <div className="flex flex-col space-y-4 mt-4">
-      {menuItems.map((item) => (
-        <Link
-          key={item.to}
-          to={item.to}
-          spy={true}
-          smooth={true}
-          offset={item.offset}
-          className="text-sm font-medium transition-colors hover:text-primary"
-        >
-          {item.name}
-        </Link>
-      ))}
-    </div>
-  );
-}
-
 export default NavBar;
