@@ -7,6 +7,7 @@ interface ContactInfoCardProps {
   href: string;
 }
 
+// Function component with explicit typing
 const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
   icon,
   text,

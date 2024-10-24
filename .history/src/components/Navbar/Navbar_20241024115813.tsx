@@ -12,7 +12,7 @@ const menuItems = [
   { name: "Skills", to: "skills", offset: -120 },
   { name: "Experience", to: "exp", offset: -100 },
   { name: "Portfolio", to: "pf", offset: -100 },
-  { name: "Contact Me", to: "contact-me", offset: -100 },
+  { name: "Contact Me", to: "contact-me", offset: -150 },
 ];
 
 export function NavBar() {

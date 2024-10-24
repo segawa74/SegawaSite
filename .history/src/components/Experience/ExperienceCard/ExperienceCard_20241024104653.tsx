@@ -19,7 +19,7 @@ const ExperienceCard: React.FC<{ details: ExperienceDetails }> = ({
         </Badge>
       </CardHeader>
       <CardContent>
-        <ul className="list-disc list-inside space-y-2">
+        <ul className="list-disc list-inside space-y-8">
           {details.responsibilities.map((item, index) => (
             <li key={index} className="text-sm text-muted-foreground">
               {item}

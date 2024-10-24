@@ -11,7 +11,7 @@ const ExperienceCard: React.FC<{ details: ExperienceDetails }> = ({
   details,
 }) => {
   return (
-    <Card className="h-full">
+    <Card className="">
       <CardHeader>
         <CardTitle>{details.title}</CardTitle>
         <Badge variant="secondary" className="w-fit">

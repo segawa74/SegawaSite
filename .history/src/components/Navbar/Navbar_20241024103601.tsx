@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import * as React from "react";
 import { Link } from "react-scroll";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -48,8 +48,8 @@ export function NavBar() {
         </div>
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="md:hidden ml-auto">
-              <Menu className="h-5 w-5" />
+            <Button variant="outline" size="icon" className="md:hidden">
+              <Menu className="h-5 w-5 ml-auto" />
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>

@@ -2,11 +2,12 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface ContactInfoCardProps {
-  icon: React.ReactNode;
-  text: string;
-  href: string;
+  icon: React.ReactNode; // Type for the icon, which can be any valid React node
+  text: string; // Text to display
+  href: string; // URL for the link
 }
 
+// Function component with explicit typing
 const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
   icon,
   text,

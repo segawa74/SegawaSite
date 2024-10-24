@@ -4,7 +4,7 @@ import ContactInfoCard from "./ContactInfoCard/ContactInfoCard";
 
 const ContactMe: React.FC = () => {
   return (
-    <section id="contact-me" className="py-40 bg-muted">
+    <section id="contact-me" className="py-60 bg-muted">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-10">Contact Me</h2>
         <div className="grid gap-6 md:grid-cols-2 max-w-2xl mx-auto">

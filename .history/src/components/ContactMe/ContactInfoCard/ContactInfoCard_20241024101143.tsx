@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Mail, Github } from "lucide-react";
 
 interface ContactInfoCardProps {
   icon: React.ReactNode;
@@ -7,11 +8,7 @@ interface ContactInfoCardProps {
   href: string;
 }
 
-const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
-  icon,
-  text,
-  href,
-}) => {
+function ContactInfoCard({ icon, text, href }: ContactInfoCardProps) {
   return (
     <Card>
       <CardContent className="flex items-center p-6">
@@ -27,6 +24,6 @@ const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
       </CardContent>
     </Card>
   );
-};
+}
 
 export default ContactInfoCard;
