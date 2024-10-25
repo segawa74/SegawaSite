@@ -1,8 +1,7 @@
-import React from "react";
 import { Github, Mail } from "lucide-react";
 import ContactInfoCard from "./ContactInfoCard/ContactInfoCard";
 
-const ContactMe: React.FC = () => {
+const ContactMe = () => {
   return (
     <section id="contact-me" className="py-40">
       <div className="container mx-auto px-4">

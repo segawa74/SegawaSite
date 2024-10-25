@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
+import { Link } from "react-scroll";
 const techIcons = [
   { src: "./assets/images/img01.png", alt: "React" },
   { src: "./assets/images/img02.png", alt: "HTML" },
@@ -8,7 +9,7 @@ const techIcons = [
   { src: "./assets/images/img04.png", alt: "Javascript" },
 ];
 
-const Hero: React.FC = () => {
+const Hero = () => {
   return (
     <section id="hero" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
@@ -25,7 +26,16 @@ const Hero: React.FC = () => {
             ご覧いただきありがとうございます。こちらのサイトはスキルをアピールするためのポートフォリオサイトです。
           </p>
           <Button asChild>
-            <a href="#contact">お問い合わせ</a>
+            <Link
+              key="contact-me"
+              to="contact-me"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              className="cursor-pointer"
+            >
+              お問い合わせ
+            </Link>
           </Button>
         </motion.div>
 

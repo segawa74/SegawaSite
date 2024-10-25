@@ -94,7 +94,7 @@ export const PORTFOLIO: PortfolioItem[] = [
   {
     title: "ポートフォリオサイト",
     link: "#",
-    img: "./assets/images/site-01.png",
+    img: "./assets/images/site-02.png",
     comment: "現在表示しているReactを使った自己紹介サイトです。",
   },
   {

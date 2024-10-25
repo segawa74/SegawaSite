@@ -1,6 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer className="text-gray-600">
       <Separator className="mb-6" />

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "../mode-toggle";
-
+import MobileNav from "./MobileNavbar/MobileNav";
 const menuItems = [
   { name: "Home", to: "hero", offset: -80 },
   { name: "Skills", to: "skills", offset: -120 },
@@ -16,7 +16,7 @@ const menuItems = [
   { name: "Contact Me", to: "contact-me", offset: -100 },
 ];
 
-export function NavBar() {
+const NavBar = () => {
   const [activeSection, setActiveSection] = React.useState("");
 
   const handleSetActive = (to: string) => {
@@ -38,7 +38,7 @@ export function NavBar() {
               offset={item.offset}
               onSetActive={() => handleSetActive(item.to)}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-sm font-medium transition-colors hover:text-primary cursor-pointer",
                 activeSection === item.to
                   ? "text-primary font-semibold"
                   : "text-muted-foreground"
@@ -56,31 +56,12 @@ export function NavBar() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right">
-            <MobileNav />
+            <MobileNav menuItems={menuItems} />
           </SheetContent>
         </Sheet>
       </div>
     </nav>
   );
-}
-
-function MobileNav() {
-  return (
-    <div className="flex flex-col space-y-4 mt-4">
-      {menuItems.map((item) => (
-        <Link
-          key={item.to}
-          to={item.to}
-          spy={true}
-          smooth={true}
-          offset={item.offset}
-          className="text-sm font-medium transition-colors hover:text-primary"
-        >
-          {item.name}
-        </Link>
-      ))}
-    </div>
-  );
-}
+};
 
 export default NavBar;

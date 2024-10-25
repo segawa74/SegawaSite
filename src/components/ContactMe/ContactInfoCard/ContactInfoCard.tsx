@@ -7,11 +7,7 @@ interface ContactInfoCardProps {
   href: string;
 }
 
-const ContactInfoCard: React.FC<ContactInfoCardProps> = ({
-  icon,
-  text,
-  href,
-}) => {
+const ContactInfoCard = ({ icon, text, href }: ContactInfoCardProps) => {
   return (
     <Card>
       <CardContent className="flex items-center p-6">

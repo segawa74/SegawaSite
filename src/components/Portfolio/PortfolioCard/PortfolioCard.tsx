@@ -14,7 +14,7 @@ interface PortfolioItem {
   comment?: string;
 }
 
-function PortfolioCard({ details }: { details: PortfolioItem }) {
+const PortfolioCard = ({ details }: { details: PortfolioItem }) => {
   return (
     <Card className="h-full">
       <CardHeader>
@@ -24,7 +24,7 @@ function PortfolioCard({ details }: { details: PortfolioItem }) {
         <img
           src={details.img}
           alt={details.title}
-          className="w-full h-48 object-cover rounded-md"
+          className="w-full h-48 object-cover rounded-md border"
         />
         {details.comment && (
           <p className="mt-4 text-sm text-muted-foreground">
@@ -41,6 +41,6 @@ function PortfolioCard({ details }: { details: PortfolioItem }) {
       </CardFooter>
     </Card>
   );
-}
+};
 
 export default PortfolioCard;

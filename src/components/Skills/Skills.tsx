@@ -22,9 +22,7 @@ const Skills: React.FC = () => {
   return (
     <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Technical Proficiency
-        </h2>
+        <h2 className="text-3xl font-bold text-center mb-10">Skills</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-1">
             <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
