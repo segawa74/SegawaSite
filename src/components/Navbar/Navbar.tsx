@@ -6,6 +6,7 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "../mode-toggle";
 
 const menuItems = [
   { name: "Home", to: "hero", offset: -80 },
@@ -25,6 +26,7 @@ export function NavBar() {
   return (
     <nav className="sticky top-0 z-30 w-full backdrop-blur-sm bg-background/80 border-b border-border">
       <div className="container flex h-16 items-center justify-between">
+        <ModeToggle />
         <div className="flex items-center space-x-4 hidden md:flex">
           {menuItems.map((item) => (
             <Link

@@ -2,10 +2,10 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 const techIcons = [
-  { src: "/assets/images/img01.png", alt: "Technology 1" },
-  { src: "/assets/images/img02.png", alt: "Technology 2" },
-  { src: "/assets/images/img03.png", alt: "Technology 3" },
-  { src: "/assets/images/img04.png", alt: "Technology 4" },
+  { src: "./assets/images/img01.png", alt: "React" },
+  { src: "./assets/images/img02.png", alt: "HTML" },
+  { src: "./assets/images/img03.png", alt: "CSS" },
+  { src: "./assets/images/img04.png", alt: "Javascript" },
 ];
 
 const Hero: React.FC = () => {
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
         >
           <div className="relative mb-8">
             <img
-              src="/assets/images/identicon.png"
+              src="./assets/images/identicon.png"
               alt="Kazuki Segawa"
               className="w-48 h-48 rounded-full shadow-lg"
             />

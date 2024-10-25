@@ -16,7 +16,7 @@ const ContactMe: React.FC = () => {
           <ContactInfoCard
             icon={
               <img
-                src="/assets/images/github.svg"
+                src="./assets/images/github.svg"
                 alt="GitHub"
                 className="w-6 h-6"
               />
