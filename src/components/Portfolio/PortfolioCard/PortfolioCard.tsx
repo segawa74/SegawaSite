@@ -1,25 +1,46 @@
-import "./PortfolioCard.css";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
-interface PortfolioCardProps {
-  details: {
-    link: string;
-    title: string;
-    img: string;
-    comment?: string;
-  };
+interface PortfolioItem {
+  link: string;
+  title: string;
+  img: string;
+  comment?: string;
 }
 
-const PortfolioCard: React.FC<PortfolioCardProps> = ({ details }) => {
+function PortfolioCard({ details }: { details: PortfolioItem }) {
   return (
-    <div className="portfolio-card">
-      <a href={details.link} target="_blank" rel="noopener noreferrer">
-        <h6>{details.title}</h6>
-
-        <img src={details.img} alt={details.title} />
-        {details.comment}
-      </a>
-    </div>
+    <Card className="h-full">
+      <CardHeader>
+        <CardTitle>{details.title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <img
+          src={details.img}
+          alt={details.title}
+          className="w-full h-48 object-cover rounded-md"
+        />
+        {details.comment && (
+          <p className="mt-4 text-sm text-muted-foreground">
+            {details.comment}
+          </p>
+        )}
+      </CardContent>
+      <CardFooter>
+        <Button asChild>
+          <a href={details.link} target="_blank" rel="noopener noreferrer">
+            View Project
+          </a>
+        </Button>
+      </CardFooter>
+    </Card>
   );
-};
+}
 
 export default PortfolioCard;

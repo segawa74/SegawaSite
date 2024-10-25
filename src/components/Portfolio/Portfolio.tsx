@@ -1,22 +1,9 @@
-import * as React from "react";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import { PORTFOLIO } from "../../utils/data";
-
-interface PortfolioItem {
-  title: string;
-  link: string;
-  img: string;
-  comment?: string;
-}
+import PortfolioCard from "./PortfolioCard/PortfolioCard";
 
 const Portfolio = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
@@ -67,33 +54,4 @@ const Portfolio = () => {
     </section>
   );
 };
-
-function PortfolioCard({ details }: { details: PortfolioItem }) {
-  return (
-    <Card className="h-full">
-      <CardHeader>
-        <CardTitle>{details.title}</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <img
-          src={details.img}
-          alt={details.title}
-          className="w-full h-48 object-cover rounded-md"
-        />
-        {details.comment && (
-          <p className="mt-4 text-sm text-muted-foreground">
-            {details.comment}
-          </p>
-        )}
-      </CardContent>
-      <CardFooter>
-        <Button asChild>
-          <a href={details.link} target="_blank" rel="noopener noreferrer">
-            View Project
-          </a>
-        </Button>
-      </CardFooter>
-    </Card>
-  );
-}
 export default Portfolio;

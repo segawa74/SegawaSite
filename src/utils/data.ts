@@ -1,13 +1,18 @@
-interface Skill {
-  skill: string;
-  skillLevel: string;
-  percentage: string;
-}
+import {
+  PanelTop,
+  Server,
+  Database,
+  PencilRuler,
+  LucideIcon,
+} from "lucide-react";
 
 interface SkillSection {
-  title: string;
-  icon: string;
-  skills: Skill[];
+  category: string;
+  iconPath: LucideIcon;
+  skillsList: {
+    name: string;
+    prificiencyLevel: string;
+  }[];
 }
 
 interface Experience {
@@ -23,42 +28,42 @@ interface PortfolioItem {
   comment?: string;
 }
 
-export const SKILLS: SkillSection[] = [
+export const SKILL_SECTIONS: SkillSection[] = [
   {
-    title: "Frontend",
-    icon: "./assets/images/frontend-icon.svg",
-    skills: [
-      { skill: "HTML5", skillLevel: "Entry", percentage: "40%" },
-      { skill: "CSS3", skillLevel: "Entry", percentage: "40%" },
-      { skill: "JavaScript", skillLevel: "Entry", percentage: "40%" },
-      { skill: "React.js", skillLevel: "Studying", percentage: "20%" },
+    category: "Frontend",
+    iconPath: PanelTop,
+    skillsList: [
+      { name: "HTML5", prificiencyLevel: "Entry" },
+      { name: "CSS3", prificiencyLevel: "Entry" },
+      { name: "JavaScript", prificiencyLevel: "Entry" },
+      { name: "React.js", prificiencyLevel: "Studying" },
     ],
   },
   {
-    title: "Backend",
-    icon: "./assets/images/backend-icon.svg",
-    skills: [
-      { skill: "Node.js", skillLevel: "Studying", percentage: "20%" },
-      { skill: "Express.js", skillLevel: "Studying", percentage: "20%" },
-      { skill: "Java", skillLevel: "Entry", percentage: "40%" },
+    category: "Backend",
+    iconPath: Server,
+    skillsList: [
+      { name: "Node.js", prificiencyLevel: "Studying" },
+      { name: "Express.js", prificiencyLevel: "Studying" },
+      { name: "Java", prificiencyLevel: "Entry" },
     ],
   },
   {
-    title: "Data Base",
-    icon: "./assets/images/database-icon.svg",
-    skills: [
-      { skill: "PostgreSQL", skillLevel: "Entry", percentage: "40%" },
-      { skill: "MongoDB", skillLevel: "Entry", percentage: "40%" },
-      { skill: "Oracle", skillLevel: "Entry", percentage: "40%" },
+    category: "Data Base",
+    iconPath: Database,
+    skillsList: [
+      { name: "PostgreSQL", prificiencyLevel: "Entry" },
+      { name: "MongoDB", prificiencyLevel: "Entry" },
+      { name: "Oracle", prificiencyLevel: "Entry" },
     ],
   },
   {
-    title: "Tools",
-    icon: "./assets/images/tools-icon.svg",
-    skills: [
-      { skill: "Git & GitHub", skillLevel: "Studying", percentage: "20%" },
-      { skill: "Visual Studio Code", skillLevel: "Entry", percentage: "40%" },
-      { skill: "Eclipse", skillLevel: "Entry", percentage: "40%" },
+    category: "Tools",
+    iconPath: PencilRuler,
+    skillsList: [
+      { name: "Git & GitHub", prificiencyLevel: "Studying" },
+      { name: "Visual Studio Code", prificiencyLevel: "Entry" },
+      { name: "Eclipse", prificiencyLevel: "Entry" },
     ],
   },
 ];
