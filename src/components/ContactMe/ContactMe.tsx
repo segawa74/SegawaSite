@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Github } from "lucide-react";
+import { Mail } from "lucide-react";
 import ContactInfoCard from "./ContactInfoCard/ContactInfoCard";
 
 const ContactMe: React.FC = () => {
@@ -14,7 +14,13 @@ const ContactMe: React.FC = () => {
             href="mailto:segawa74dev@gmail.com"
           />
           <ContactInfoCard
-            icon={<Github className="w-6 h-6" />}
+            icon={
+              <img
+                src="/assets/images/github.svg"
+                alt="GitHub"
+                className="w-6 h-6"
+              />
+            }
             text="github.com/segawa74"
             href="https://github.com/segawa74"
           />
