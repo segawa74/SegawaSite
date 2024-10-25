@@ -10,12 +10,6 @@
   box-sizing: border-box;
 }
 
-body {
-
-  color: #000000;
-  background-color: #ffffff;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
