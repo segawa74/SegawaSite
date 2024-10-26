@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -10,10 +9,7 @@ interface SkillsInfoCardProps {
   }[];
 }
 
-const SkillsInfoCard: React.FC<SkillsInfoCardProps> = ({
-  category,
-  skillsList,
-}) => {
+const SkillsInfoCard = ({ category, skillsList }: SkillsInfoCardProps) => {
   return (
     <Card>
       <CardContent className="p-6">

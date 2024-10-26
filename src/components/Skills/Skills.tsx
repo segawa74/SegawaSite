@@ -28,7 +28,6 @@ const Skills: React.FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
               {SKILL_SECTIONS.map((item) => (
                 <SkillCard
-                  key={item.category}
                   category={item.category}
                   iconPath={item.iconPath}
                   isActive={selectedSkill.category === item.category}
@@ -44,6 +43,11 @@ const Skills: React.FC = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="py-10 grid grid-cols-4 ">
+        <h3 className="text-m text-muted-foreground col-start-2 col-end-4">
+          ※実務経験がある技術のみ経験した期間を記載しております。他、自己学習で勉強しているものは「Studying」をつけています。
+        </h3>
       </div>
     </section>
   );

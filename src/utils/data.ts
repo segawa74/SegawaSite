@@ -24,6 +24,7 @@ interface Experience {
 interface PortfolioItem {
   title: string;
   link: string;
+  githubLink?: string;
   img: string;
   comment?: string;
 }
@@ -33,9 +34,10 @@ export const SKILL_SECTIONS: SkillSection[] = [
     category: "Frontend",
     iconPath: PanelTop,
     skillsList: [
-      { name: "HTML5", prificiencyLevel: "Entry" },
-      { name: "CSS3", prificiencyLevel: "Entry" },
-      { name: "JavaScript", prificiencyLevel: "Entry" },
+      { name: "HTML5", prificiencyLevel: "3ヶ月" },
+      { name: "CSS3", prificiencyLevel: "3ヶ月" },
+      { name: "JavaScript", prificiencyLevel: "3ヶ月" },
+      { name: "JSP", prificiencyLevel: "3ヶ月" },
       { name: "React.js", prificiencyLevel: "Studying" },
     ],
   },
@@ -45,16 +47,16 @@ export const SKILL_SECTIONS: SkillSection[] = [
     skillsList: [
       { name: "Node.js", prificiencyLevel: "Studying" },
       { name: "Express.js", prificiencyLevel: "Studying" },
-      { name: "Java", prificiencyLevel: "Entry" },
+      { name: "Java", prificiencyLevel: "3ヶ月" },
     ],
   },
   {
     category: "Data Base",
     iconPath: Database,
     skillsList: [
-      { name: "PostgreSQL", prificiencyLevel: "Entry" },
-      { name: "MongoDB", prificiencyLevel: "Entry" },
-      { name: "Oracle", prificiencyLevel: "Entry" },
+      { name: "PostgreSQL", prificiencyLevel: "Studying" },
+      { name: "MongoDB", prificiencyLevel: "Studying" },
+      { name: "Oracle", prificiencyLevel: "3ヶ月" },
     ],
   },
   {
@@ -62,8 +64,9 @@ export const SKILL_SECTIONS: SkillSection[] = [
     iconPath: PencilRuler,
     skillsList: [
       { name: "Git & GitHub", prificiencyLevel: "Studying" },
-      { name: "Visual Studio Code", prificiencyLevel: "Entry" },
-      { name: "Eclipse", prificiencyLevel: "Entry" },
+      { name: "SVN", prificiencyLevel: "3ヶ月" },
+      { name: "Visual Studio Code", prificiencyLevel: "Studying" },
+      { name: "Eclipse", prificiencyLevel: "3ヶ月" },
     ],
   },
 ];
@@ -74,18 +77,21 @@ export const EXPERIENCE: Experience[] = [
     date: "2022年4月 - 2026年3月卒業予定",
     responsibilities: [
       "IT分野の知識を深めるために、情報科学・情報工学の基礎知識から応用技術までを学習し、ネットワーク基礎、データベース設計、アルゴリズム、アセンブリ言語（CASL-ii）などの科目に取り組んでいます。",
-      "プログラミングにおいては、Javaのオブジェクト指向プログラミングを用いた演習課題を通して開発スキルを身に着けています。具体的な演習内容は、複数言語のあいさつを管理し、入力された言語に合わせて適切なあいさつを返すプログラムや、生徒名簿を管理するプログラムをオブジェクト指向を用いて実装しました。",
+      "プログラミングにおいては、Javaのオブジェクト指向プログラミングを用いた演習課題を通して開発スキルを身に着けています。",
       "また、数学の基礎理論や応用数学も学び、論理的思考力を強化しています",
       "ITについて体系的に学びたいという意欲から入学を決意し、現在も業務に支障がない範囲で継続的に学習を進めています。",
     ],
   },
   {
-    title: "工業系システム開発(Java)",
-    date: "2024年8月 - 2024年10月",
+    title: "ラベル管理システム開発(Java)",
+    date: "2024年8月 - 2024年10月（3ヶ月）",
     responsibilities: [
-      "工業系会社の製品ラベル管理システムの開発携わりました。",
-      "詳細設計から開発、単体テスト仕様書作成までを担当し、システム開発の基本プロセスを一通り経験しました。",
-      "周りの先輩エンジニアと密に連携し、フィードバックを元に業務を進めることで、期限内に業務を完了させるとともに、自分のスキルを向上させることができました。",
+      "詳細設計 => コーディング => 単体テスト仕様書作成",
+      "Frontend: JSP",
+      "Backend: WebLogic上で動く独自フレームワーク",
+      "その他:Oracle, SVN",
+      "チーム人数: 4人, 担当ステップ数:約1000ステップ×2画面",
+      "先輩エンジニアとの密な連携を通じて、行程通りにプロジェクトを進行させ、技術スキルも向上させるとともに自信にもつながりました。",
     ],
   },
 ];
@@ -94,6 +100,7 @@ export const PORTFOLIO: PortfolioItem[] = [
   {
     title: "ポートフォリオサイト",
     link: "#",
+    githubLink: "https://github.com/segawa74/SegawaSite",
     img: "./assets/images/site-02.png",
     comment: "現在表示しているReactを使った自己紹介サイトです。",
   },

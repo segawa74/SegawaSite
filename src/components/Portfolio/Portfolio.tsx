@@ -28,7 +28,7 @@ const Portfolio = () => {
                   key={index}
                   className="flex-[0_0_100%] min-w-0 pl-4 md:flex-[0_0_50%]"
                 >
-                  <PortfolioCard details={item} />
+                  <PortfolioCard {...item} />
                 </div>
               ))}
             </div>

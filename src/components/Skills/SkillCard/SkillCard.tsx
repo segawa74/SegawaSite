@@ -8,12 +8,12 @@ interface SkillCardProps {
   onClick: () => void;
 }
 
-const SkillCard: React.FC<SkillCardProps> = ({
+const SkillCard = ({
   category,
   iconPath: LucideIcon,
   isActive,
   onClick,
-}) => {
+}: SkillCardProps) => {
   return (
     <Card
       className={`cursor-pointer transition-all ${
