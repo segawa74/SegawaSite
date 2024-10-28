@@ -1,4 +1,4 @@
-# SegawaSite
+# segawa-site
 
 ご覧いただきありがとうございます。これは私の React スキルをアピールするためのポートフォリオサイトです。<br >
 レスポンシブ対応しているのでスマホからもご確認いただけます。
@@ -16,7 +16,7 @@ Vercel を使って Web ページをデプロイしています。
 | **Frontend** | TypeScript, React(Vite), TailwindCSS, shadcn/ui |
 | **Deploy**   | Vercel                                          |
 
-#　機能一覧
+# 機能一覧
 
 - **React Hook Form** - フォーム管理用ライブラリ
 - **React Scroll** - スクロールアニメーションのサポート
