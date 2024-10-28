@@ -6,20 +6,15 @@
 
 # URL
 
-https://segawa74.github.io/SegawaSite/
-GitHub Pages を使って Web ページをデプロイしています。
+https://segawa-site.vercel.app/
+Vercel を使って Web ページをデプロイしています。
 
 # 使用技術
 
 | カテゴリ     | 技術                                            |
 | ------------ | ----------------------------------------------- |
 | **Frontend** | TypeScript, React(Vite), TailwindCSS, shadcn/ui |
-| **Deproy**   | GitHub Pages                                    |
-| **CI/CD**    | GitHub Actions                                  |
-
-# Github Actions CI/CD
-
-Github への push 時に、Github Pages への自動デプロイが実行されます
+| **Deploy**   | Vercel                                          |
 
 #　機能一覧
 
