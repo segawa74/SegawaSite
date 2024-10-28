@@ -8,7 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 interface PortfolioCardProps {
-  link: string;
+  link?: string;
   githubLink?: string;
   title: string;
   img: string;

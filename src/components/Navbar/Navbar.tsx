@@ -9,11 +9,11 @@ import { cn } from "@/lib/utils";
 import { ModeToggle } from "../mode-toggle";
 import MobileNav from "./MobileNavbar/MobileNav";
 const menuItems = [
-  { name: "Home", to: "hero", offset: -80 },
-  { name: "Skills", to: "skills", offset: -120 },
-  { name: "Experience", to: "exp", offset: -100 },
-  { name: "Portfolio", to: "pf", offset: -100 },
-  { name: "Contact Me", to: "contact-me", offset: -100 },
+  { name: "Home", to: "hero", offset: -20 },
+  { name: "Skills", to: "skills", offset: -20 },
+  { name: "Experience", to: "exp", offset: -20 },
+  { name: "Portfolio", to: "pf", offset: -20 },
+  { name: "Contact Me", to: "contact-me", offset: -20 },
 ];
 
 const NavBar = () => {

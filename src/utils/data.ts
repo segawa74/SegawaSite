@@ -18,12 +18,16 @@ interface SkillSection {
 interface Experience {
   title: string;
   date: string;
-  responsibilities: string[];
+  responsible?: string;
+  frontend?: string;
+  backend?: string;
+  others?: string;
+  comment?: string[];
 }
 
 interface PortfolioItem {
   title: string;
-  link: string;
+  link?: string;
   githubLink?: string;
   img: string;
   comment?: string;
@@ -75,7 +79,7 @@ export const EXPERIENCE: Experience[] = [
   {
     title: "帝京大学情報科学科通信教育課程",
     date: "2022年4月 - 2026年3月卒業予定",
-    responsibilities: [
+    comment: [
       "IT分野の知識を深めるために、情報科学・情報工学の基礎知識から応用技術までを学習し、ネットワーク基礎、データベース設計、アルゴリズム、アセンブリ言語（CASL-ii）などの科目に取り組んでいます。",
       "プログラミングにおいては、Javaのオブジェクト指向プログラミングを用いた演習課題を通して開発スキルを身に着けています。",
       "また、数学の基礎理論や応用数学も学び、論理的思考力を強化しています",
@@ -85,13 +89,13 @@ export const EXPERIENCE: Experience[] = [
   {
     title: "ラベル管理システム開発(Java)",
     date: "2024年8月 - 2024年10月（3ヶ月）",
-    responsibilities: [
-      "詳細設計 => コーディング => 単体テスト仕様書作成",
-      "Frontend: JSP",
-      "Backend: WebLogic上で動く独自フレームワーク",
-      "その他:Oracle, SVN",
-      "チーム人数: 4人, 担当ステップ数:約1000ステップ×2画面",
-      "先輩エンジニアとの密な連携を通じて、行程通りにプロジェクトを進行させ、技術スキルも向上させるとともに自信にもつながりました。",
+    responsible: "詳細設計 => コーディング => 単体テスト仕様書作成",
+    frontend: "JSP",
+    backend: "WebLogic上で動く独自フレームワーク",
+    others:
+      "データベース:Oracle バージョン管理:SVN チーム人数: 4人 担当ステップ数:約1000ステップ×2画面",
+    comment: [
+      "先輩エンジニアとの密な連携を通じて、工程通りにプロジェクトを進行させ、技術スキルも向上させるとともに自信にもつながりました。",
     ],
   },
 ];
@@ -106,7 +110,6 @@ export const PORTFOLIO: PortfolioItem[] = [
   },
   {
     title: "時差グラフサイト",
-    link: "#",
     img: "#",
     comment: "作成中です",
   },

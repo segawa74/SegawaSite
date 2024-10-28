@@ -28,6 +28,7 @@ const Skills: React.FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
               {SKILL_SECTIONS.map((item) => (
                 <SkillCard
+                  key={item.category}
                   category={item.category}
                   iconPath={item.iconPath}
                   isActive={selectedSkill.category === item.category}

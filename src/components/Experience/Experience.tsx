@@ -1,6 +1,5 @@
 import { EXPERIENCE } from "../../utils/data";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
-
 const Experience = () => {
   return (
     <section id="exp" className="py-20 ">
